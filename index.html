@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,17 +9,18 @@
     <title>Portafolio Ingles</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <header id="main-header" class="hero">
         <div class="hero_container">
-            <h1>Kevin Ortiz</h1>
-            <p>English Portfolio - 2026</p>
+            <h1>English Portfolio</h1>
+            <p>Kevin Giovany Ortiz Leguizamon- 2026</p>
             <button id="explore-btn">Explore</button>
         </div>
         <nav class="navbar">
-                <a href="#somosLOCode">Quienes somos</a>
-                <a href="#nuestros-productos">Nuestros Productos</a>
-                <a href="#caracteristicas">Caracteristicas</a>
+            <a href="#somosLOCode">Quienes somos</a>
+            <a href="#nuestros-productos">Nuestros Productos</a>
+            <a href="#caracteristicas">Caracteristicas</a>
         </nav>
     </header>
     <section id="somosLOCode">
@@ -26,13 +28,13 @@
             <div class="imagecontainer"></div>
             <div class="texto">
                 <h2>Somos <span class="color-acento">LOCKOVERCODE</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
-                    elit. Voluptates nostrum, perspiciatis fugit labore 
-                    delectus omnis nemo? Quis ex nisi, repudiandae eligendi, 
-                    maiores corporis esse perspiciatis, fuga similique iste 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Voluptates nostrum, perspiciatis fugit labore
+                    delectus omnis nemo? Quis ex nisi, repudiandae eligendi,
+                    maiores corporis esse perspiciatis, fuga similique iste
                     ut ratione?</p>
-                </div>
             </div>
+        </div>
     </section>
     <section id="nuestros-productos">
         <div class="container">
@@ -40,34 +42,34 @@
             <div class="productos">
                 <div class="carta">
                     <h3>Lock Code</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Minus vitae ullam repudiandae, assumenda hic ducimus 
-                        ipsum! Quos sequi nobis voluptates ratione autem 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Minus vitae ullam repudiandae, assumenda hic ducimus
+                        ipsum! Quos sequi nobis voluptates ratione autem
                         doloremque, non beatae a vero veritatis corrupti sapiente.</p>
-                        <button>+Info</button>
-                    </div>
-                    <div class="carta">
-                        <h3>Lock App</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Minus vitae ullam repudiandae, assumenda hic ducimus 
-                            ipsum! Quos sequi nobis voluptates ratione autem 
-                doloremque, non beatae a vero veritatis corrupti sapiente.</p>
-                <button>+Info</button>
+                    <button>+Info</button>
                 </div>
                 <div class="carta">
-                <h3>Lock Web</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Minus vitae ullam repudiandae, assumenda hic ducimus 
-                    ipsum! Quos sequi nobis voluptates ratione autem 
-                    doloremque, non beatae a vero veritatis corrupti sapiente.</p>
+                    <h3>Lock App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Minus vitae ullam repudiandae, assumenda hic ducimus
+                        ipsum! Quos sequi nobis voluptates ratione autem
+                        doloremque, non beatae a vero veritatis corrupti sapiente.</p>
+                    <button>+Info</button>
+                </div>
+                <div class="carta">
+                    <h3>Lock Web</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Minus vitae ullam repudiandae, assumenda hic ducimus
+                        ipsum! Quos sequi nobis voluptates ratione autem
+                        doloremque, non beatae a vero veritatis corrupti sapiente.</p>
                     <button>+Info</button>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <section id="caracteristicas">
-        <div class="container"> 
+        <div class="container">
             <ul>
                 <li>✔️​ 100% Seguro</li>
                 <li>✔️ Flexibilidad</li>
@@ -87,5 +89,28 @@
             <p>&copy; LOCKOVERCODE 2024</p>
         </div>
     </footer>
+    <script>
+        const header = document.getElementById("main-header");
+        const exploreBtn = document.getElementById("explore-btn");
+
+        function shrinkHeader() {
+            header.classList.add("shrink");
+        }
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 50) {
+                shrinkHeader();
+            }
+        });
+
+        exploreBtn.addEventListener("click", () => {
+            shrinkHeader();
+            window.scrollTo({
+                top: window.innerHeight,
+                behavior: "smooth"
+            });
+        });
+    </script>
 </body>
+
 </html>
