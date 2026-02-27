@@ -10,6 +10,7 @@ body {
 h1 {font-size: 3.5em;}
 h2 {font-size: 2.7em;}
 h3 {font-size: 2em;}
+h4 {font-size: 1.7em;}
 p {font-size: 1.25em;}
 ul {list-style: none;}
 li {font-size: 1.25em;}
@@ -38,7 +39,6 @@ button:hover {
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
-    max-height: 100vh;
 }
 header {
     position: sticky;
@@ -132,7 +132,6 @@ header {
     background: #f0f0fa;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     gap: 16px;
     color: #6666aa;
@@ -185,7 +184,7 @@ header {
 .video-placeholder p { font-size: 1em; margin: 0; opacity: 0.7; }
 .video-placeholder input[type="file"] { font-size: 0.85em; color: white; }
 
-#Dossier {
+#Dossier .container {
     background: #f7f7fb;
 }
 #Dossier .Task{
@@ -197,21 +196,21 @@ header {
     margin: 40px auto;
 }
 #Dossier h3{ color: white; }
-#Dossier p{ color: white; padding-left: 50px; }
+#Dossier p{ color: white; padding: 0 50px; }
 
 #Reflection {
     background: #2a2a55;
     color: white;
 }
-#Reflection .section-label { color: #aab0ff; }
 #Reflection .section-title { color: white; }
-
 .reflection-text {
-    max-width: 780px;
+    padding-left: 50px; 
+    max-width: 900px;
     line-height: 1.85;
     opacity: 0.88;
 }
 .reflection-text p {
+    padding-left: 80px ;
     margin-bottom: 1.2em;
 }
 
@@ -239,6 +238,7 @@ footer .container {
     h1 {font-size: 7.5em;}
     h2 {font-size: 2.7em;}
     h3 {font-size: 2.3em;}
+    h4 {font-size: 1.9em;}
     p {font-size: 1.25em;}
     ul {list-style: none;}
     li {font-size: 1.25em;}
