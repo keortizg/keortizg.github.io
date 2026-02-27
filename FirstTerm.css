@@ -1,0 +1,289 @@
+* {box-sizing: border-box;}
+
+html {scroll-behavior: smooth;}
+
+body {
+    font-family: roboto, sans-serif;
+    margin: 0;
+}
+
+h1 {font-size: 3.5em;}
+h2 {font-size: 2.7em;}
+h3 {font-size: 2em;}
+p {font-size: 1.25em;}
+ul {list-style: none;}
+li {font-size: 1.25em;}
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgb(21, 59, 182);
+}
+
+button:hover {
+    background-color: rgb(7, 12, 77);
+}
+
+.color-acento {
+    color: #0c052b;
+}
+
+.container {
+    padding: 50px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    max-height: 100vh;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header_container {
+    background-color: #1c1c2b;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;  
+    position: relative;
+    padding: 0 0 0 20px;
+}
+
+.logo {
+    flex-direction: column;
+    justify-content: center;
+}
+.logo h1 {
+    margin: 0;
+    padding: 25px 20px;
+    color: white;
+    font-size: 1.7em;
+} 
+.hero_container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-height: 80px;
+}
+
+/* NAV */
+.nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+.nav ul {
+    display: flex;
+    gap: 20px;
+}
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+.nav a:hover {
+    color: rgb(21, 59, 182);
+    opacity: 1;
+}
+ /* ── SECTION TITLES ── */
+.section-title {
+    color: #1c1c2b;
+    margin: 0 0 40px 0;
+}
+
+#MyLanguageEntryPassport {
+    background: #f7f7fb;
+}
+#MyLanguageEntryPassport .container{   
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pdf-viewer {
+    width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(28,28,43,0.12);
+    background: #e8e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    z-index: 1;
+}
+.pdf-placeholder {
+    width: 80%;
+    height: 600px;
+    border-radius: 12px;
+    border: 2px dashed #b0b0d0;
+    background: #f0f0fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    color: #6666aa;
+    margin: 0 auto ;
+}
+.pdf-placeholder p {
+    font-size: 1em;
+    margin: 0;
+    opacity: 0.7;
+}
+.pdf-placeholder input[type="file"] {
+    font-size: 0.85em;
+    color: #1c1c2b;
+}
+
+#ThisisMe {
+    background: #1c1c2b;
+    color: white;
+}
+#ThisisMe .section-label { color: #7b8fff; }
+#ThisisMe .section-title { color: white; }
+
+.video-wrapper {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+    background: #0f1020;
+}
+.video-wrapper video {
+    width: 100%;
+    display: block;
+    max-height: 520px;
+    object-fit: cover;
+}
+.video-placeholder {
+    width: 100%;
+    height: 420px;
+    border-radius: 12px;
+    border: 2px dashed rgba(123,143,255,0.4);
+    background: rgba(123,143,255,0.07);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    color: #7b8fff;
+}
+.video-placeholder .vid-icon { font-size: 4em; }
+.video-placeholder p { font-size: 1em; margin: 0; opacity: 0.7; }
+.video-placeholder input[type="file"] { font-size: 0.85em; color: white; }
+
+#Dossier {
+    background: #f7f7fb;
+}
+#Dossier .Task{
+    width: 90%;
+    border-radius: 12px;
+    border: 2px dashed #201F1F;
+    background-color: #222222;
+    padding: 20px 40px 40px 40px;
+    margin: 40px auto;
+}
+#Dossier h3{ color: white; }
+#Dossier p{ color: white; padding-left: 50px; }
+
+#Reflection {
+    background: #2a2a55;
+    color: white;
+}
+#Reflection .section-label { color: #aab0ff; }
+#Reflection .section-title { color: white; }
+
+.reflection-text {
+    max-width: 780px;
+    line-height: 1.85;
+    opacity: 0.88;
+}
+.reflection-text p {
+    margin-bottom: 1.2em;
+}
+
+footer {
+    background-color: #f5f5f5;
+}
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+footer .container {
+    height: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 750px) {
+    body {
+    font-family: roboto, sans-serif;
+    margin: 0;
+    }
+
+    h1 {font-size: 7.5em;}
+    h2 {font-size: 2.7em;}
+    h3 {font-size: 2.3em;}
+    p {font-size: 1.25em;}
+    ul {list-style: none;}
+    li {font-size: 1.25em;}
+
+    header h1{
+        margin: 100px 10px 30px 10px;
+    }
+    header a{
+        margin: 20px 10px;
+    }
+
+    .logo h1 {
+        margin: 0;
+        font-size: 2em;
+    }
+    .header_container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 50px 0 30px;
+    }
+    .nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    #explore-btn{
+        margin: 50px 10px;
+        font-size: 2.5em;
+        padding: 15px 40px;
+        font-weight: bold;
+    }
+    #MyLanguageEntryPassport .container{
+        padding-top: 20px;
+    }
+    .pdf-viewer {
+        height: 69vh;
+    }
+    .pdf-placeholder {
+        height: 70vh;
+    }
+}
+
+@media (min-width: 1100px) {
+    #caracteristicas {
+        background-position: calc(100vw - 800px) 120px;
+        ;
+    }
+}

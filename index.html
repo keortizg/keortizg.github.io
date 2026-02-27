@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <title>Portafolio Ingles</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header id="main-header" class="hero">
+        <div class="header_container">
+            <div class="logo">
+                <h1>English Portfolio</h1>
+            </div>
+            <div class="hero_container">
+                <p class="subtitle">Kevin Giovany Ortiz Leguizamon - 2026</p>
+                <button id="explore-btn" href="terms">Start</button>
+            </div>
+            <nav id="navbar" class="nav">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#terms">First Term</a></li>
+                    <li><a href="#">Second Term</a></li>
+                    <li><a href="#">Final Term</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="Home">
+        <div class="container">
+            <div id="StartLetter">
+                <div class="container">
+                    <h2>English <span class="color-acento">Portfolio</span></h2>
+                    <p>A collection of my learning journey, reflections, and progress throughout the English course.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="terms">
+        <div class="container">
+            <h2 style="text-align:center; color:#1c1c2b;">My Terms</h2>
+            <div class="cards-grid">
+                <a href="FirstTerm.html" class="cards">
+                    <h3>First Term</h3>
+                    <p>Introduction, vocabulary and basic structures.</p>
+                </a>
+                <div class="cards">
+                    <h3>Second Term</h3>
+                    <p>Coming soon.</p>
+                </div>
+                <div class="cards">
+                    <h3>Final Term</h3>
+                    <p>Coming soon.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; Kevin Ortiz 2026</p>
+        </div>
+    </footer>
+    <script>
+        const hero = document.getElementById("main-header");
+        const exploreBtn = document.getElementById("explore-btn");
+
+        function toggleHero() {
+            if (window.scrollY > 60) {
+                hero.classList.add("scrolled");
+                document.body.classList.add("header-small");
+            } else {
+                hero.classList.remove("scrolled");
+                document.body.classList.remove("header-small");
+            }
+        }
+
+        window.addEventListener("scroll", toggleHero);
+
+        exploreBtn.addEventListener("click", () => {
+            document.getElementById("terms").scrollIntoView({ behavior: "smooth" })
+        });
+    </script>
+</body>
+
+</html>
