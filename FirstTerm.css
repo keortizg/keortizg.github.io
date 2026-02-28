@@ -155,7 +155,7 @@ header {
 #ThisisMe .section-title { color: white; }
 
 .video-placeholder {
-    width: 50%;
+    width: 100%;
     height: 420px;
     border-radius: 12px;
     border: 2px dashed rgba(123,143,255,0.4);
@@ -172,8 +172,8 @@ header {
 .video-placeholder input[type="file"] { font-size: 0.85em; color: white; }
 
 .myscript {
-    width: 50%;
-    height: 420px;
+    width: 100%;
+    height: auto;
     border-radius: 12px;
     border: 2px dashed rgba(123,143,255,0.4);
     background: rgba(123,143,255,0.07);
@@ -271,6 +271,13 @@ footer .container {
     }
     .pdf-viewer {
         height: 69vh;
+    }
+    .video-placeholder {
+        width: 50%;
+    }
+    .myscript {
+        width: 50%;
+        height: 420px;
     }
     .pdf-placeholder {
         height: 70vh;
