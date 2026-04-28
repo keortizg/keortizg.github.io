@@ -225,7 +225,7 @@ header {
     margin-top: auto;
     background: #fafbff;
 }
-.upload-area p { margin: 6px 0; font-size: 0.9em; color: #888; }
+.upload-area p { margin: 6px 0; font-size: 1.5em; color: #000; text-align: left;}
 
 /* Responsive tabs */
 @media (max-width: 749px) {
@@ -275,35 +275,52 @@ header {
     margin: 0;
 }
 #Dossier .container {
-    background: #f7f7fb;
+    background: #f7f7fb;   
+}
+#Dossier .DContent{
+    flex-direction: column;
+    text-align: center;
 }
 #Dossier .Task{
+    text-align: left;
     width: 90%;
     border-radius: 12px;
     border: 2px dashed #201F1F;
     background-color: #222222;
     padding: 20px 40px 40px 40px;
-    margin: 40px auto;
+    margin: 20px auto;
 }
 #Dossier h3{ color: white; }
 #Dossier p{ color: white; padding: 0 50px; }
+#Dossier img{
+    
+    width: 90%;
+    border-radius: 12px;
+    border: 2px dashed #201F1F;
+    padding: 20px;
+    margin: 20px auto;
+} 
 
-#Reflection {
+#Corrections {
     background: #2a2a55;
     color: white;
 }
-#Reflection .section-title { color: white; }
-.reflection-text {
-    padding-left: 50px; 
-    max-width: 900px;
-    line-height: 1.85;
-    opacity: 0.88;
+#Corrections .section-title { color: white; }
+.correction-block h3 {
+    padding-left: 20px; 
 }
-.reflection-text p {
-    padding-left: 80px ;
+.correction-block p {
+    padding-left: 40px;
+    padding-right: 30px;
     margin-bottom: 1.2em;
 }
-
+.correction-block{
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(123,143,255,0.12);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 12px;
+}
 footer {
     background-color: #f5f5f5;
 }
