@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <title>SecondTerm</title>
+    <link rel="stylesheet" href="FinalTerm.css">
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="header_container">
+            <div class="logo">
+                <h1>English Portfolio</h1>
+            </div>
+            <nav id="navbar" class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="FirstTerm.html">First Term</a></li>
+                    <li><a href="SecondTerm.html">Second Term</a></li>
+                    <li><a href="#">Final Term</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="MyStrategies">
+        <div class="container">
+            <h2 class="section-title">My Strategies</h2>           
+            <div class="browser-window">
+
+                <div class="browser-bar">
+                    <div class="browser-dots">
+                        <span class="dot-red"></span>
+                        <span class="dot-yellow"></span>
+                        <span class="dot-green"></span>
+                    </div>
+                    <div class="browser-tabs">
+                        <button class="btab active" onclick="showBTab('b1', this)">
+                            <span class="btab-icon">🗣️</span> Describing Images
+                        </button>
+                        <button class="btab" onclick="showBTab('b2', this)">
+                            <span class="btab-icon">🗣️</span> Listening & Repeating
+                        </button>
+                        <button class="btab" onclick="showBTab('b3', this)">
+                            <span class="btab-icon">🗣️</span> Giving Opinions
+                        </button>
+                        <button class="btab" onclick="showBTab('b4', this)">
+                            <span class="btab-icon">🗣️</span> Future Plans
+                        </button>
+                    </div>
+                </div>
+
+                <div class="browser-content">
+                    <div class="bpanel active" id="panel-b1">
+                        <div class="bpanel-header">
+                            <div class="bpanel-num">01</div>
+                            <div class="bpanel-meta">
+                                <span class="bpanel-badge">Speaking · Strategy 1</span>
+                                <h3 class="bpanel-title">Describing Images</h3>
+                            </div>
+                        </div>
+                        <div class="bpanel-grid">
+                            <div class="bblock">
+                                <div class="bblock-label">🎯 Objective</div>
+                                <p>To improve speaking fluency and vocabulary through image description.</p>
+                            </div>
+                            <div class="bblock">
+                                <div class="bblock-label">📋 Activity</div>
+                                <p>I selected different images and described what I could see using complete sentences in English.</p>
+                            </div>
+                        </div>
+                        <div class="bblock bblock-example">
+                            <div class="bblock-label">💬 Example</div>
+                            <p>In this image, I can see a group of students studying together. They are using laptops and taking notes in a classroom. The atmosphere looks calm and organized.</p>
+                        </div>
+                        <div class="bblock bblock-evidence">
+                            <div class="bblock-label">📎 Evidence</div>
+                            <div class="audio-label">Audio describing the images</div>
+                            <div class="audio-wrap">
+                                <audio controls>
+                                    <source src="Resources/strategy1-describing.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                        </div>
+                        <div class="bblock bblock-reflection">
+                            <div class="bblock-label">✍️ Reflection</div>
+                            <p>This strategy helped me improve my vocabulary and speaking confidence. I learned how to describe situations and people more clearly in English. I still need to improve pronunciation and sentence organization.</p>
+                        </div>
+                    </div>
+                    <div class="bpanel" id="panel-b2">
+                        <div class="bpanel-header">
+                            <div class="bpanel-num">02</div>
+                            <div class="bpanel-meta">
+                                <span class="bpanel-badge">Speaking · Strategy 2</span>
+                                <h3 class="bpanel-title">Listening and Repeating</h3>
+                            </div>
+                        </div>
+                        <div class="bpanel-grid">
+                            <div class="bblock">
+                                <div class="bblock-label">🎯 Objective</div>
+                                <p>To improve pronunciation and listening comprehension.</p>
+                            </div>
+                            <div class="bblock">
+                                <div class="bblock-label">📋 Activity</div>
+                                <p>I listened to short English audio clips and repeated the sentences aloud to imitate pronunciation and rhythm.</p>
+                            </div>
+                        </div>
+                        <div class="bblock bblock-example">
+                            <div class="bblock-label">💬 Example Sentences</div>
+                            <p>
+                                · Technology is changing modern education.<br>
+                                · English helps people communicate internationally.<br>
+                                · Students use digital platforms every day.
+                            </p>
+                        </div>
+                        <div class="bblock bblock-evidence">
+                            <div class="bblock-label">📎 Evidence</div>
+                            <div class="audio-label">Audio repeating the sentences</div>
+                            <div class="audio-wrap">
+                                <audio controls>
+                                    <source src="Resources/strategy2-repeating.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                        </div>
+                        <div class="bblock bblock-reflection">
+                            <div class="bblock-label">✍️ Reflection</div>
+                            <p>This strategy helped me improve pronunciation and listening skills. I learned how some words are connected in spoken English. I still need to continue practicing speed and fluency.</p>
+                        </div>
+                    </div>
+                    <div class="bpanel" id="panel-b3">
+                        <div class="bpanel-header">
+                            <div class="bpanel-num">03</div>
+                            <div class="bpanel-meta">
+                                <span class="bpanel-badge">Speaking · Strategy 3</span>
+                                <h3 class="bpanel-title">Giving Opinions</h3>
+                            </div>
+                        </div>
+                        <div class="bpanel-grid">
+                            <div class="bblock">
+                                <div class="bblock-label">🎯 Objective</div>
+                                <p>To improve spontaneous speaking and opinion expression.</p>
+                            </div>
+                            <div class="bblock">
+                                <div class="bblock-label">📋 Activity</div>
+                                <p>I recorded short opinions about technology, education, and environmental problems.</p>
+                            </div>
+                        </div>
+                        <div class="bblock bblock-example">
+                            <div class="bblock-label">💬 Example</div>
+                            <p>In my opinion, technology is very important for education because it helps students access information more easily. I also think English is necessary for professional growth.</p>
+                        </div>
+                        <div class="bblock bblock-evidence">
+                            <div class="bblock-label">📎 Evidence</div>
+                            <div class="audio-label">Audio expressing personal opinions</div>
+                            <div class="audio-wrap">
+                                <audio controls>
+                                    <source src="Resources/strategy3-opinions.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                        </div>
+                        <div class="bblock bblock-reflection">
+                            <div class="bblock-label">✍️ Reflection</div>
+                            <p>This strategy helped me organize my ideas when speaking. I improved my confidence expressing opinions in English. I still need to work on grammar and pronunciation.</p>
+                        </div>
+                    </div>
+                    <div class="bpanel" id="panel-b4">
+                        <div class="bpanel-header">
+                            <div class="bpanel-num">04</div>
+                            <div class="bpanel-meta">
+                                <span class="bpanel-badge">Speaking · Strategy 4</span>
+                                <h3 class="bpanel-title">Future Plans Discussion</h3>
+                            </div>
+                        </div>
+                        <div class="bpanel-grid">
+                            <div class="bblock">
+                                <div class="bblock-label">🎯 Objective</div>
+                                <p>To practice future structures in spoken English.</p>
+                            </div>
+                            <div class="bblock">
+                                <div class="bblock-label">📋 Activity</div>
+                                <p>I recorded myself talking about future plans using <em>will</em>, <em>be going to</em>, and <em>would</em>.</p>
+                            </div>
+                        </div>
+                        <div class="bblock bblock-example">
+                            <div class="bblock-label">💬 Example</div>
+                            <p>After graduation, I am going to continue studying software development. I think technology will create more job opportunities in the future. If I had the opportunity, I would work for an international company.</p>
+                        </div>
+                        <div class="bblock bblock-evidence">
+                            <div class="bblock-label">📎 Evidence</div>
+                            <div class="audio-label">Audio discussing future plans</div>
+                            <div class="audio-wrap">
+                                <audio controls>
+                                    <source src="Resources/strategy4-future.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                        </div>
+                        <div class="bblock bblock-reflection">
+                            <div class="bblock-label">✍️ Reflection</div>
+                            <p>This activity helped me practice future grammar structures naturally. I improved my ability to speak about goals and future situations. I still need to improve fluency and confidence during long conversations.</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <section id="Reflections">
+        <div class="container">
+            <h2 class="section-title">Reflections</h2>
+            <div class="reflections-grid">
+                <div class="reflection-card">
+                    <p class="rc-number">Strategy 01 · Reading Aloud</p>
+                    <h3>Speaking Reflection</h3>
+                    <p>This activity helped me identify pronunciation mistakes.
+                        I noticed that sometimes I pause too much when speaking.
+                        I still need to work on fluency and confidence.</p>
+                </div>
+                <div class="reflection-card">
+                    <p class="rc-number">Strategy 02 · Self-recording</p>
+                    <h3>Speaking Reflection</h3>
+                    <p>This strategy helped me improve my pronunciation.
+                        I learned to pay attention to pauses and intonation.
+                        I still need to practice difficult words more often.</p>
+                </div>
+                <div class="reflection-card">
+                    <p class="rc-number">Strategy 03 · Personalizing</p>
+                    <h3>Writing Reflection</h3>
+                    <p>This activity helped me understand how to use will to talk about future plans.
+                        I learned that future sentences can be simple and clear.
+                        I still need to improve grammar and sentence structure.</p>
+                </div>
+                <div class="reflection-card">
+                    <p class="rc-number">Strategy 04 · Literature for Grammar</p>
+                    <h3>Writing Reflection</h3>
+                    <p>This strategy helped me understand how English sentences are organized.
+                        I learned how to write a short paragraph using a model.
+                        I still need more vocabulary to express more ideas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Dossier">
+        <div class="container">
+            <h2 class="section-title">Dossier</h2>
+            <div class="DContent">
+            <div class="Task">
+                <h3>TASK (CAMPAIGN)</h3>
+                <p>Students will work in pairs or small groups to create and present a political campaign as if they were global leaders. In this activity, they will imagine that they rule the world and explain what actions they would take to solve urgent global problems such as poverty, pollution, inequality, education, and climate change. </p>
+            </div>
+            <div>
+                <div class="image_Campaing">
+                    <img class="img" src="Resource/Image_Campaing.jpeg"></img>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section id="Corrections">
+        <div class="container">
+            <h2 class="section-title">Corrections</h2>
+            <div class="correction-block">
+                <h3>First Term · Activity 1</h3>
+                <p>I have been studying Software Development Technology at Politécnico Grancolombiano since 2024.<br>
+                I have been developing academic projects related to programming and problem solving.<br>
+                I have been learning how software can improve daily life through technology.<br>
+                This academic process has helped me improve my technical skills and prepare for my professional future.</p>
+            </div>
+            <div class="correction-block">
+                <h3>First Term · Activity 2: Quiz</h3>
+                <p>- What have you learned in your life so far?<br>
+                I have been studying at university for two years. I have been learning programming, databases, and software design.<br>
+                - What responsabilites have you had in your work/university?<br>
+                I have also been improving my communication skills because they are important for my future career.<br>
+                - How long have you been at your current job/career?<br>
+                I have been studying Software Development Technology at POLI since 2024.
+                </p>
+            </div>
+            <div class="correction-block">
+                <h3>First Term · Activity 3: CV</h3>
+                <p>Professional Profile<br>
+                <br>
+                I am a student of Software Development Technology at Politécnico Grancolombiano.<br>
+                I have been learning different programming languages and developing academic projects since 2024.<br>
+                I am responsible, organized, and interested in creating software solutions that can help people solve everyday problems.<br>
+                <br>
+                Professional Achievements<br>
+                <br>
+                I have Worked in the software development area for 5 years , in addintion i have developed apps and websites to some important companies.<br>
+                I have been completing academic projects in software development, and I have been improving my knowledge of programming logic and system design.<br>
+                I have been to various conferences about development and technology advances, in which, I have presented some proyects that i have developed.<br>
+                I have also been strengthening my teamwork skills by participating in collaborative university activities.<br>
+                <br>
+                Current Professional Activities<br>
+                <br>
+                I have been studying software development and improving my technical knowledge.<br>
+                Recently, I have been working on projects that involve application design and problem solving.<br>
+                I have been developing various programs that have resolved complex problems to big company.<br>
+                I have been Working in teams to the susyainable energy develop, there fore, I have been learning about as apply renewable energy Systems.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; Kevin Ortiz 2026</p>
+        </div>
+    </footer>
+    <script>
+        function showBTab(id, btn) {
+            document.querySelectorAll('.bpanel').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.btab').forEach(b => b.classList.remove('active'));
+            document.getElementById('panel-' + id).classList.add('active');
+            btn.classList.add('active');
+        }
+    </script>
+</body>
+
+</html>
